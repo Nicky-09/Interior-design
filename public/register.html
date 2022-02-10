@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+
+<body>
+	<img class="wave" src="images/lr_wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="images/lr_bg.svg">
+		</div>
+		<div class="login-content">
+			<form onsubmit="myFunc(event)">
+				<img src="images/lr_avatar.svg">
+				<h1 class="title">Register</h1>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Email</h5>
+						<input type="email" class="input" id="email" name="email" value="" required>
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-id-card"></i>
+					</div>
+					<div class="div">
+						<h5>First Name</h5>
+						<input type="text" class="input" id="fname" name="firstname" value="" required>
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-id-card"></i>
+					</div>
+					<div class="div">
+						<h5>Last Name</h5>
+						<input type="text" class="input" id="lname" name="lastname" value="" required>
+					</div>
+
+				</div>
+
+
+				<div class="input-div pass">
+					<div class="i">
+						<i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						<h5>Password</h5>
+						<input type="password" class="input" id="password" name="password"
+							pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+							title="Must have at least 8-12 characters and contains at least one Lowercase, Uppercase and Numeric character."
+							required>
+					</div>
+
+				</div>
+
+				<div class="input-div pass">
+					<div class="i">
+						<i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						<h5>Confirm Password</h5>
+						<input type="password" class="input" id="confirm_password" required name="confirm_password">
+					</div>
+
+				</div>
+
+				<input type="submit" class="btn" value="Login">
+				<a href="login.html">Already a member? Login</a>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+
+</html>
